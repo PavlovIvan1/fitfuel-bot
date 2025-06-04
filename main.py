@@ -3,8 +3,9 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.filters import CommandStart
 from aiogram.types import WebAppInfo, InlineKeyboardMarkup, InlineKeyboardButton
 import logging
+import os
 
-API_TOKEN = "8132739182:AAEQ50yhVZeUeY4ZlN-VdX-bGteGfz_sic0"
+API_TOKEN = os.environ.get['API_TOKEN']
 
 logging.basicConfig(level=logging.INFO)
 
